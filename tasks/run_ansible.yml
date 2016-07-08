@@ -10,7 +10,7 @@ image: docker:///windkithk/leofs_deploy
 
 params:
   ANSIBLE_INVENTORY:
-#  ANSIBLE_KEY:
+  ANSIBLE_KEY:
   LEOFS_GW_HOST:
 
 inputs:

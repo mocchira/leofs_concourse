@@ -50,6 +50,7 @@ jobs:
     - task: run_ansible
       file: leofs_concourse/tasks/run_ansible.yml
       params: 
+        ANSIBLE_KEY: {{ANSIBLE_KEY}}
         ANSIBLE_INVENTORY: leofs_concourse/ansible/hosts.local
         LEOFS_GW_HOST: {{LEOFS_GW_HOST}}
       on_failure:
