@@ -19,6 +19,7 @@ source="package"
 
 [leo_storage]
 192.168.0.151 leofs_module_nodename=S0@192.168.0.151
+192.168.0.152 leofs_module_nodename=S0@192.168.0.152
 #192.168.0.37 leofs_module_nodename=S1@192.168.0.37
 #192.168.0.38 leofs_module_nodename=S2@192.168.0.38
 #192.168.0.39 leofs_module_nodename=S3@192.168.0.39
