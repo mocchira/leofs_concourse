@@ -14,6 +14,7 @@ params:
 
 inputs:
 - name: leofs_test2
+- name: leofs_concourse
 
 run:
   path: leofs_concourse/scripts/run_leofs_test2.sh

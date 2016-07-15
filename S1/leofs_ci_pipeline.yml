@@ -55,13 +55,13 @@ jobs:
         put: slack-alert
         params:
           text: |
-            Build LeoFS from Source Failed, check at $ATC_EXTERNAL_URL/builds/$BUILD_ID
+            Deploy LeoFS Failed, check at $ATC_EXTERNAL_URL/builds/$BUILD_ID
 
   - name: integration_test
     plan:
     - aggregate:
+      - get: leofs_concourse
       - get: leofs_test2
-        passed: [leofs_deploy]
         trigger: true
 
     - task: run_leofs_test2
@@ -75,4 +75,4 @@ jobs:
         put: slack-alert
         params:
           text: |
-            Build LeoFS from Source Failed, check at $ATC_EXTERNAL_URL/builds/$BUILD_ID
+            leofs_test2 Failed, check at $ATC_EXTERNAL_URL/builds/$BUILD_ID
