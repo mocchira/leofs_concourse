@@ -1,0 +1,19 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: windkithk/leofs_deploy
+
+params:
+  ANSIBLE_KEY:
+  LEOFS_GW_HOST:
+  LEOFS_GW_PORT:
+  LEOFS_MANAGER_NODE:
+
+inputs:
+- name: leofs_test2
+
+run:
+  path: leofs_concourse/scripts/run_leofs_test2.sh

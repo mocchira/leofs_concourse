@@ -19,11 +19,16 @@ source="package"
 
 [leo_storage]
 192.168.0.151 leofs_module_nodename=S0@192.168.0.151
-192.168.0.152 leofs_module_nodename=S0@192.168.0.152
-#192.168.0.37 leofs_module_nodename=S1@192.168.0.37
-#192.168.0.38 leofs_module_nodename=S2@192.168.0.38
-#192.168.0.39 leofs_module_nodename=S3@192.168.0.39
-#192.168.0.40 leofs_module_nodename=S4@192.168.0.40
+192.168.0.152 leofs_module_nodename=S1@192.168.0.152
+192.168.0.153 leofs_module_nodename=S2@192.168.0.153
+192.168.0.154 leofs_module_nodename=S3@192.168.0.154
+192.168.0.155 leofs_module_nodename=S4@192.168.0.155
+
+[leo_storage_up]
+192.168.0.151 leofs_module_nodename=S0@192.168.0.151
+192.168.0.152 leofs_module_nodename=S1@192.168.0.152
+192.168.0.153 leofs_module_nodename=S2@192.168.0.153
+192.168.0.154 leofs_module_nodename=S3@192.168.0.154
 
 [leo_gateway]
 192.168.0.201 leofs_module_nodename=G0@192.168.0.201
