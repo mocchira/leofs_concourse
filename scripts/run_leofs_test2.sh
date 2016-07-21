@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+source /usr/local/erlang/activate
 cd leofs_test2
 make
 
